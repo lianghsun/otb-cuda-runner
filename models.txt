@@ -1,0 +1,15 @@
+# OpenTWBench — 待補跑的模型（由小到大排，先跑小的較快看到成果）
+#
+# 格式：<Hugging Face repo id>  <bf16 權重 GiB>
+# 權重大小用來判斷你的顯卡放不放得下；放不下的會自動略過，不會白下載。
+#
+# 前 6 顆已在榜上，但用的是剔除 2180 道壞題之前的舊題目（exam 22,200 題），
+# 需要用清理後的題目（22,021 題）重算。Gemma-3-TAIDE-12b 是全新模型。
+
+LiquidAI/LFM2-700M                   1.4
+LiquidAI/LFM2-1.2B                   2.2
+ibm-granite/granite-4.0-micro        6.3
+ibm-granite/granite-4.0-h-tiny      12.9
+taide/Llama-3.1-TAIDE-LX-8B-Chat    15.9
+taide/Gemma-3-TAIDE-12b-Chat-2602   25.4
+ibm-granite/granite-4.0-h-small     60.0
