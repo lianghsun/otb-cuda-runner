@@ -75,7 +75,8 @@ python3 preflight.py
 
 ```bash
 tmux new -s otb      # 建議在 tmux / screen 裡跑，斷線也不會中斷
-./run.sh
+./run.sh LiquidAI/LFM2-700M     # 第一次先跑最小的一顆，確認環境沒問題（幾分鐘）
+./run.sh                        # 再跑全部；已完成的會自動跳過
 ```
 
 - 中斷了（斷電、Ctrl+C、當機）直接再跑一次 `./run.sh`，已經算過的題目不會重算
